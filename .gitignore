@@ -1,0 +1,15 @@
+.vercel
+node_modules/
+build/
+dest/
+.next/
+backend-dev.log
+backend-dev.err.log
+frontend-dev.log
+frontend-dev.err.log
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.tsbuildinfo

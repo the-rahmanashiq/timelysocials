@@ -1,0 +1,36 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2019",
+    "lib": ["es2019"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "outDir": "./dest",
+    "noEmit": false,
+    "incremental": false,
+    "isolatedModules": false,
+    "jsx": "react-jsx",
+    "types": ["node"]
+  },
+  "include": [
+    "global.d.ts",
+    "src/server.ts",
+    "src/app.ts",
+    "src/config/**/*.ts",
+    "src/errors/**/*.ts",
+    "src/helpers/jwtHelpers.ts",
+    "src/middlewares/**/*.ts",
+    "src/modules/**/*.ts",
+    "src/types/**/*.ts",
+    "src/utils/**/*.ts"
+  ],
+  "exclude": [
+    "src/app/**/*.ts",
+    "src/app/**/*.tsx",
+    "src/constants/**/*.ts",
+    "src/helpers/axios/**/*.ts",
+    "src/redux/**/*.ts",
+    "src/services/**/*.ts"
+  ]
+}
