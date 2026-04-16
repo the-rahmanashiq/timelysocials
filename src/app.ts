@@ -43,6 +43,13 @@ app.get("/", (req: Request, res: Response) => {
   });
 });
 
+app.get("/health", (req: Request, res: Response) => {
+  res.status(httpStatus.OK).json({
+    success: true,
+    message: "Backend is healthy",
+  });
+});
+
 app.use("/api/v1", router);
 app.use("/providers/google", googleRoutes);
 
