@@ -14,10 +14,11 @@ Unified Timely Socials app with:
 
 ## Backend deployment
 
-The backend is prepared for Railway deployment:
+The backend is prepared for Render deployment:
 
 - build command: `npm run build:api`
 - start command: `npm run start:api`
 - healthcheck path: `/health`
+- blueprint file: `render.yaml`
 
-Copy `.env.example` into your provider's environment variables and set the real values before deploying.
+Copy `.env.example` into Render environment variables and set real values before deploying.
