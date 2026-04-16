@@ -1,15 +1,4 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "dest/server.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "dest/server.js"
-    }
-  ]
+  "framework": "nextjs",
+  "buildCommand": "npm run build:web"
 }
